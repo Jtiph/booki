@@ -1,0 +1,278 @@
+@media (max-width: 767.98px) {
+
+/*header*/
+    .main-container{
+        padding: 0;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: 115px;
+    }
+    .logo {
+        padding: 0px;
+        height: 79px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo img{
+        padding: 30px;
+    }
+    
+    .menu nav {  
+        width: 105%;
+        gap: 0px;
+    }
+    
+    .menu a:hover  {
+        color: #0065FC; 
+        
+    }
+    
+    .btnhebergement{
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
+        color: #0065FC;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btnactivite {
+        border-top: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 2px #F2F2F2;
+        
+    }
+    
+    .btnactivite:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    .infogroup {
+        width: 100%;
+        height: 432px;
+        padding-left: 20px;
+
+    }
+
+    .headline{
+        width: 89%;
+        height: 79px;
+        gap: 8px;
+    }
+
+    .headline p{
+        margin: 0;
+    }
+
+    .searchbar{
+        width: 89%;
+        height: 49px;
+    }
+    .iconlieu{
+        width: 15%;
+    }
+
+    .textbutton {
+        display: none;
+
+    }
+
+    .loupe {
+        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 49px;
+        background-color: #0065FC;
+        border-radius: 15px;
+        border: 1px solid #0065FC;
+        padding: 0px 15px 0px 15px;
+
+    }
+
+    .iconloupe{
+        color: white;
+        font-size: 17px;
+    }
+
+    .filtre {
+        height: 161px;
+        width: 91%;
+    }
+
+    .filtre-title{
+        margin-top: 0;
+        height: 21px;
+    }
+
+    .filtretexticon {
+        width: 46%;
+        
+    }
+    .vignette {
+        width: 100%; /*pour donner la mm taille à toutes les vignettes*/
+        flex-wrap: wrap;
+    }
+    .filtretext{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .infobar {
+        width: 93%;
+        height: 38px;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .populaires-title {
+        width: 100%;
+        height: 26px;
+
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+        height: 146px;
+        margin: 0;
+    }
+    
+    .populaires-cards img {
+       height: 146px;
+       width: 44%;
+
+    }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .hebergements-and-populaires{
+        flex-direction: column-reverse; /*les sections sont inversées*/
+        width: 100%;
+        gap: 0; /*il y avait un gap de 50 sur le desktop*/
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .hebergements {
+       background-color: transparent; /* pour la version mobile la section n'est plus en gris*/
+       margin-top: 35px;
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+    }
+
+    .hebergements-title {
+        width: 100%;
+        height: 26px;
+
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 0;
+        align-items: center;
+       
+    }
+
+    .hebergements-cards .card {
+        width: 100%; 
+        height: 207.25px;
+    }
+
+    .afficher {
+        width: 100%;
+        padding: 0; 
+    }
+
+    .activités {
+        width: 100%;
+        height: 965.02px;
+        margin-top: 0;
+       
+    }
+
+    .activite-title {
+        width: 100%;
+        height: 30.02px;
+
+    }
+
+    .activitecard {
+        flex-direction: column;
+        width: 100%;
+        height: 845px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .activités .card{
+        width: 87%;
+        height: 200px;
+        min-width: 315px;
+    }
+
+    .imgactivite {
+        width: 100%;
+        height: 141px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    span .imgactivite{
+        width: 100%;
+    }
+    .backfooter {
+        background: #F2F2F2;
+        width: 100%;
+        height: 461px;
+        padding: 30px;
+    }
+    
+    .menufooter {
+        flex-direction: column;
+        width: 263.67px;
+        height: 123px;
+        gap: 50px;
+
+    }
+
+    .textfooter {
+        width: 288px;
+        height: 123px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    
+    }
+
+    .textfooter-title{
+        margin: 0;
+    }
+    
+    .textfooter p {
+        margin: 0;
+    }
+
+}

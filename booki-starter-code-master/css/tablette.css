@@ -1,0 +1,129 @@
+@media (max-width: 1024px) { 
+    .menu{
+        width: 100%;
+    }  
+    
+    .menu nav{
+        width: 25%;
+    }
+    .btnhebergement{
+        width: 50%;
+    }
+    .btnactivite{
+        width: 50%;
+    }
+    .infogroup{
+        width: 100%;
+        height: 322px;
+           
+    }  
+    .searchbar {
+        width: 45%;
+    } 
+    .iconlieu {
+        width: 15%;
+    }
+    .filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 77%;
+        white-space: nowrap;
+
+       }
+
+    .filtre-title{
+        margin: 0;
+       }
+
+    .infobar {
+        margin-top: 0px;
+    
+    }
+       
+     /*déjà donner*/
+    .hebergements-and-populaires {
+         flex-direction: column;
+        width: 100%;
+        gap: 50px;
+            
+    }
+        
+    /*déjà donner*/
+    .hebergements {
+         width: 100%;
+    }
+
+    .hebergements-cards {
+        width: 100%;
+        
+    }
+    
+    .hebergements-cards .card {
+        width: 27%;
+    }
+
+    .hebergements-cards .card-content{
+        line-height: 25px;
+    }
+        
+    /*déjà donner*/
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    /*déjà donner*/
+    .populaires-cards {
+         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        
+    /*déjà donner*/
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    /*déjà donner*/
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    
+    .activités {
+        width: 100%;
+        height: 390.02px; 
+        gap: 30px;
+    }
+
+    
+    .activite-title {
+        width: 100%;
+        height: 30.02px;
+        margin-bottom: 0;
+    }
+    
+    
+    .imgactivite {
+        width: 100%;
+        height: 200px;
+    
+    }
+
+    
+    .activités .card-title {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        white-space: wrap;
+    
+    }
+    
+    .menufooter{
+        padding-left: 20px;
+        gap: 30px;
+    }
+
+    
+    }
+

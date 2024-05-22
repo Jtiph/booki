@@ -1,0 +1,520 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/* élements ajouter par moi*/
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    font-size: 18px;
+}
+
+
+/****** Hebergements And Populaires ***********/
+/*donner par OC*/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*donner par OC*/
+.hebergements-and-populaires section {
+    /*j'ai enlevé le background color car ça posait pb avec le mobile*/
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+/*donner par OC*/
+.hebergements {
+    width: 65%;
+    background-color: var(--main-bg-color);
+    /*le background reporté dans chaque section individuelle*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 30px;
+
+}
+
+.hebergements-cards .card {
+    width: 27%;
+    padding-bottom: 10px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.hebergements-cards .card-content {
+    padding: 0px 15px 0px 15px;
+    line-height: 22px;
+
+}
+
+
+.hebergements-cards .card-title {
+    margin: 0;
+
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin: 0;
+}
+
+.afficher {
+    padding-top: 30px;
+    margin: 0;
+    height: 21px;
+}
+
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+    background-color: var(--main-bg-color);
+    /*le background reporté dans chaque section individuelle*/
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
+
+
+
+
+/****** HEADER ***********/
+.logo {
+    padding: 30px 0px 30px 0px;
+}
+
+.logo img {
+    width: 100%;
+    height: 19px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    width: 100%;
+}
+
+.menu nav {
+    display: flex;
+    height: 35px;
+    gap: 68px;
+    width: 20%;
+}
+
+.menu a:hover {
+    color: #0065FC;
+
+}
+
+.btnhebergement {
+    border-top: solid 2px var(--main-color);
+    margin-top: -8px;
+    padding-top: 10px;
+    color: var(--main-color);
+}
+
+.btnactivite {
+    border-top: solid 2px var(--main-bg-color);
+    margin-top: -8px;
+    padding-top: 10px;
+}
+
+.btnactivite:hover {
+    border-top: solid 2px var(--main-color);
+}
+
+
+
+/****** BODY ******/
+
+/*Info Group*/
+.infogroup {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 1340px;
+    height: 281px;
+
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    gap: 8px;
+
+}
+
+.headline h1 {
+    margin: 0;
+}
+
+.headline p {
+    margin: 0;
+}
+
+/*search bar*/
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 17%;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 20px;
+}
+
+.iconlieu {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /*pour donner la taille à l'icon*/
+    background-color: var(--main-bg-color);
+}
+
+.iconlieu i {
+    color: #000000;
+    /*pour donner la couleur à l'icon*/
+}
+
+input {
+    border: none;
+
+}
+
+::placeholder {
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.search {
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px;
+    gap: 10px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: end;
+
+}
+
+.textbutton {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.loupe {
+    display: none;
+}
+
+
+
+/****** Filtres ***********/
+.filtre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 60%;
+
+}
+
+.vignette {
+    display: flex;
+    gap: 15px;
+}
+
+.filtretexticon {
+    border: 2px solid #D9D9D9;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.iconsfiltre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.filtretexticon:hover {
+    color: #000000;
+    background-color: #DEEBFF;
+
+}
+
+.filtretext {
+    height: 20px;
+    padding-right: 20px;
+    font-family: "raleway";
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.infobar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 10%;
+    width: 100%;
+}
+
+.circleinfo {
+    border-radius: 50px;
+    /*pour faire le rond*/
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    /*pour donner la taille à l'icone*/
+
+}
+
+
+/*****Activités à marseille*****/
+.activités {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+
+
+}
+
+.activite-title {
+    padding: 30px;
+
+}
+
+.activitecard {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgactivite {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.activités .card {
+    padding: 0px;
+    /*pour enlever les bordures blanches autour de la photo*/
+    width: 25%;
+
+}
+
+.activités .card-title {
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+}
+
+/*****footer****/
+
+.backfooter {
+    background: #F2F2F2;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.menufooter {
+    display: flex;
+    padding-left: 30px;
+}
+
+.textfooter {
+    width: 100%;
+    height: 163px;
+
+}
+
+.textfooter p {
+    font-size: 16px;
+}
